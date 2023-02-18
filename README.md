@@ -10,7 +10,7 @@ The plugin fetches the latest data from the API provided by [Hugging Face](https
 
 ## Installation
 
-To install the plugin, simply download the [latest release](https://github.com/bluewolfali/awesome-chatgpt-prompts-alfred.alfredworkflow) and double-click on the `.alfredworkflow` file to add it to Alfred.
+To install the plugin, simply download the [latest release](https://github.com/bluewolfali/awesome-chatgpt-prompts-alfred/blob/main/awesome-chatgpt-prompts-alfred.alfredworkflow) and double-click on the `.alfredworkflow` file to add it to Alfred.
 
 ## Usage
 
