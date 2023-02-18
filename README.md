@@ -18,6 +18,46 @@ Once installed, users can access the plugin by typing in the keyword `cp` follow
 
 ![MarineGEO circle logo](./images/screenshot1.gif "MarineGEO logo")
 
+## Authorization
+
+The first time you use the workflow after installing or upgrading, you will see a security warning:
+
+<img src="./images/authorize.png" width="405">
+
+This is a quirk of macOS 10.15 and above. Apple currently forces developers to pay $99 a year to be able to officially sign their executables and avoid this warning, which I'm not going to pay since I'm providing this workflow for free as an open source project.
+
+After seeing this warning, you have to go to **System Preferences > Security & Privacy > General** and click the new button that has appeared to allow the executable to run. You then have to run it again and you will see this security warning _again_ but now it will have a new button that lets you allow the executable to run.
+
+These warnings will appear once for each of the executables inside the workflow as you use new features. Once you have authorized all of them, you won't see these warnings anymore until you install a new version.
+
+### Authorize All Executables
+
+If you want to authorize all Bear Workflow executables at once or if you do not see the above security warnings but the workflow isn't working, you can do the following:
+
+1. Go to the **Workflows** section in Alfred Preferences
+2. Right click on **Bear** _by drgrib_ and select **Open in Terminal**
+3. Copy this command and execute it:
+
+```
+xattr -rd com.apple.quarantine cmd
+```
+
+This should authorize all the Alfred Bear the executables and fix the security errors.
+
+### 🍎 Apple Silicon Macs
+
+If your mac is based on Apple Silicon chip, you need to have Rosetta installed on your system, otherwise Alfred workflows will fail silently.
+
+<img width="582" alt="Screen Shot 2021-12-29 at 9 06 02 AM" src="https://user-images.githubusercontent.com/9834975/147670554-eae2ca66-b929-4a03-b59e-545d3e660082.png">
+
+Copy this command and execute in terminal to install Rosetta:
+
+```sh
+softwareupdate --install-rosetta
+```
+
+by [alfred-bear](https://github.com/drgrib/alfred-bear)
+
 ## Contribution
 
 If you have any suggestions or feature requests, please feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/yourusername/alfred-chatgpt-prompts). Contributions are always welcome!
