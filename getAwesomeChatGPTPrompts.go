@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-const AwesomeChatGETPromptsApiUrl = "https://datasets-server.huggingface.co/first-rows?dataset=fka%2Fawesome-chatgpt-prompts&config=fka--awesome-chatgpt-prompts&split=train"
+const AwesomeChatGETPromptsApiUrl = "https://datasets-server.huggingface.co/rows?dataset=fka%2Fawesome-chatgpt-prompts&config=default&split=train&offset=0&limit=100"
 
 type huggingFaceResponse struct {
 	Dataset  string `json:"dataset"`
